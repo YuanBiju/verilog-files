@@ -24,14 +24,14 @@ syncnt s1(clk,rst,b);
 
 initial 
 begin
-    $dumpfile("6a_4bitbinarysynccounter.vcd");
+    $dumpfile("6c_BCDsynccounter.vcd");
     $dumpvars(0,test);
 
     for(i=0;i<40;i++)
     begin
         #5 begin 
             clk = !clk;
-            if(b == 4'hf)
+            if(b == 4'h9)
             rst = 1;
             else
             rst = 0;
