@@ -1,3 +1,5 @@
+//Errors not resolved
+
 module syncnt(clk,rst,b);
 input clk,rst;
 output [3:0]b;
