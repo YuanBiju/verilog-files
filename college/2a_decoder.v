@@ -12,7 +12,7 @@ endcase
 endmodule
 
 module test;
-wire [3:0]y = 4'b0000;
+wire [3:0]y;
 reg [1:0]a = 2'b00;
 decoder d1(a,y);
 
