@@ -1,29 +1,29 @@
 module multiplexer_8to1(a,sel,y);
-input a;
 input [2:0]sel;
-output [7:0]y;
-reg [7:0]y;
+input [7:0]y;
+output a;
+reg a;
 
 always @(a,sel)
 begin
     y = 8'b0;
     case(sel)
-    3'b000: y[0] = a;
-    3'b001: y[1] = a;
-    3'b010: y[2] = a;
-    3'b011: y[3] = a;
-    3'b100: y[4] = a;
-    3'b101: y[5] = a;
-    3'b110: y[6] = a;
-    3'b111: y[7] = a;
+    3'b000: a = y[0];
+    3'b001: a = y[1];
+    3'b010: a = y[2];
+    3'b011: a = y[3];
+    3'b100: a = y[4];
+    3'b101: a = y[5];
+    3'b110: a = y[6];
+    3'b111: a = y[7];
     default: y=8'bx;
     endcase
 end
 endmodule
 
 module test;
-wire [7:0]y;
-reg a = 1'b1;
+wire [7:0]y = 8'd72;
+reg a;
 reg [2:0]sel;
 
 multiplexer_8to1 m1(a,sel,y);
