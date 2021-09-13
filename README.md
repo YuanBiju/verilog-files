@@ -25,9 +25,13 @@ This repository contains Verilog code for the following :<br />
  6.a&b.4bit binary counter
    c&d.BCD counter
   
-# Softwares Used
+## Softwares Used
 1.Icarus Verilog version 10.3 (stable) - For syntax checking<br /> 
 2.GTKWave Analyzer v3.3.103 - For simulaton
 
 <br /> 
 Note: Testbench is included within respective files
+<br /> 
+
+## Resources<br /> 
+https://iverilog.fandom.com/wiki/Main_Page
