@@ -18,13 +18,13 @@ begin
     4'd7: y = a^b;
     4'd8: y = ~(a^b);
     4'd9: y = a;
-    4'd10: y = 32'b0;
-    4'd11: y = 32'b1;
+    4'd10: y = 4'b0000;
+    4'd11: y = 4'b1111;
     4'd12: y = a+1;
     4'd13: y = a-1;
     4'd14: y = b+1;
     4'd15: y = b-1;
-    default: y = 32'bx;
+    default: y = 4'bx;
     endcase
 end
 endmodule
